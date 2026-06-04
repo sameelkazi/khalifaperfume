@@ -94,24 +94,21 @@ export const Preloader: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-center w-full max-w-md px-6 z-10">
-            {/* Crown Logo icon */}
+            {/* Gold Khalifa Logo */}
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1, ease: 'easeOut' }}
+              initial={{ scale: 0.85, opacity: 0 }}
+              animate={{ scale: [0.95, 1, 0.95], opacity: 1 }}
+              transition={{ 
+                scale: { repeat: Infinity, duration: 3.5, ease: "easeInOut" },
+                opacity: { duration: 1 }
+              }}
               className="mb-8"
             >
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" className="text-[#C9A84C]">
-                <path
-                  d="M2 4L6 9L12 3L18 9L22 4V20H2V4Z"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                />
-                <circle cx="12" cy="14" r="2" stroke="currentColor" strokeWidth="1.5" />
-              </svg>
+              <img 
+                src="/logo_gold.png" 
+                alt="Khalifa Logo" 
+                className="h-16 md:h-20 w-auto object-contain filter drop-shadow-[0_4px_12px_rgba(201,168,76,0.15)]" 
+              />
             </motion.div>
 
             {/* Liquid Morphing Text */}
