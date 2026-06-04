@@ -50,7 +50,7 @@ export const Navbar: React.FC = () => {
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => window.open('https://wa.me/919819664949', '_blank')}
+          onClick={() => window.open('https://wa.me/c/919819664949', '_blank')}
           className="flex items-center bg-[rgba(201,168,76,0.8)] text-black rounded-full pl-2 pr-4 md:pr-6 py-1.5 md:py-2 gap-2 md:gap-3 hover:bg-[rgba(201,168,76,1)] transition-colors group cursor-pointer"
         >
           <div className="bg-black/20 p-1 md:p-1.5 rounded-full flex items-center justify-center">

@@ -26,7 +26,7 @@ export const ContactFooter: React.FC = () => {
         <div className="contact-cards-grid">
           {/* Card 1: WhatsApp */}
           <a
-            href="https://wa.me/919819664949"
+            href="https://wa.me/c/919819664949"
             className="contact-card contact-card-primary"
             target="_blank"
             rel="noopener noreferrer"
@@ -134,8 +134,17 @@ export const ContactFooter: React.FC = () => {
         </div>
 
         {/* Legal copyrights */}
-        <div className="footer-copyright">
+        <div className="footer-copyright flex flex-col items-center justify-center gap-2">
           <p>© {new Date().getFullYear()} Khalifa Attar &amp; Perfumes. All Rights Reserved.</p>
+          <div className="flex items-center gap-1.5 opacity-65 hover:opacity-100 transition-opacity duration-300">
+            <span className="text-[10px] uppercase tracking-widest text-[#6B5A3E] font-semibold">Powered by</span>
+            <img 
+              src="/srk_logo.jpg" 
+              alt="SRK" 
+              className="w-auto object-contain rounded-sm border border-[#C9A84C]/15" 
+              style={{ height: '18px' }}
+            />
+          </div>
         </div>
       </div>
     </footer>
