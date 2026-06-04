@@ -1,0 +1,322 @@
+/* === PRODUCT SHOWCASE SECTION (THE ESSENCE OF YOU) === */
+
+.product-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #130802; /* Rich dark chocolate brown */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 80px 0;
+  z-index: 20;
+}
+
+/* Expanding dark background circle that rises from bottom on scroll */
+.product-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #130802;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Header — top left, drifts in */
+.product-header {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  text-align: left;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.product-main-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  color: #F5E6C8; /* Luxury cream */
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.product-main-sub {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: #A89060; /* Muted gold */
+  font-style: italic;
+  margin-top: 12px;
+  letter-spacing: 0.05em;
+}
+
+/* Center Bottle & Glow */
+.product-center {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  height: 380px;
+}
+
+.product-bottle-placeholder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-bottle-img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+  z-index: 10;
+  filter: drop-shadow(0 20px 50px rgba(201, 168, 76, 0.45));
+}
+
+.product-bottle-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.22) 0%, rgba(139, 26, 26, 0.04) 45%, transparent 70%);
+  z-index: 2;
+  pointer-events: none;
+  animation: bottleGlowBreath 6s ease-in-out infinite;
+}
+
+@keyframes bottleGlowBreath {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+/* Left Info Block */
+.product-info-left {
+  position: absolute;
+  top: 38%;
+  left: 8%;
+  width: 24%;
+  text-align: left;
+  z-index: 10;
+}
+
+/* Right Info Block */
+.product-info-right {
+  position: absolute;
+  top: 38%;
+  right: 8%;
+  width: 24%;
+  text-align: right;
+  z-index: 10;
+}
+
+.info-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #C9A84C; /* Gold */
+  margin-bottom: 14px;
+}
+
+.info-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #F5E6C8; /* Cream */
+  opacity: 0.9;
+}
+
+.info-divider {
+  height: 1px;
+  width: 50px;
+  background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+  margin: 18px 0;
+}
+
+.product-info-right .info-divider {
+  margin-left: auto;
+}
+
+.info-accent {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #A89060; /* Muted gold */
+}
+
+/* Bottom CTA Area */
+.product-bottom {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  z-index: 10;
+}
+
+.product-badges {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-badge-item span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #A89060;
+}
+
+.product-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 32px;
+  background: linear-gradient(135deg, #C9A84C, #D4AF37);
+  color: #130802; /* Dark brown text for high contrast */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.25);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.product-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.45);
+  background: linear-gradient(135deg, #D4AF37, #E8C97A);
+}
+
+.product-cta-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.product-cta-btn:hover svg {
+  transform: scale(1.1);
+}
+
+.product-copyright {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  color: #6B5A3E; /* Muted brown-gold */
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+/* Wrapper container to lock vertical and horizontal dimensions on desktop */
+.product-content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === RESPONSIVE LAYOUT === */
+
+@media (max-width: 1024px) {
+  .product-info-left, .product-info-right {
+    width: 28%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+    padding: 80px 24px;
+    height: auto;
+    min-height: auto;
+    gap: 40px;
+  }
+
+  .product-content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .product-circle {
+    display: none; /* Hide background circle on mobile to flow naturally */
+  }
+
+  .product-header {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product-center {
+    position: relative;
+    height: 320px;
+    margin: 0 auto;
+  }
+
+  .product-info-left, .product-info-right {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .info-divider {
+    margin: 15px auto !important;
+  }
+
+  .product-bottom {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
+  }
+
+  .product-badges {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,285 @@
+/* === COLLECTIONS PRODUCTS GRID SECTION === */
+
+.collections-section {
+  position: relative;
+  width: 100%;
+  background-color: #130802; /* Seamless dark chocolate brown background */
+  padding: 100px 0;
+  z-index: 20;
+}
+
+.collections-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header styling */
+.collections-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.collections-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #C9A84C; /* Accent gold */
+  margin-bottom: 12px;
+}
+
+.collections-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  color: #F5E6C8; /* Luxury cream text */
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Gold Divider */
+.gold-divider-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.divider-line {
+  display: block;
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+}
+
+.divider-diamond {
+  width: 10px;
+  height: 10px;
+  background-color: #C9A84C;
+  transform: rotate(45deg);
+  opacity: 0.85;
+}
+
+/* Grid Layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Card Styling */
+.product-card {
+  position: relative;
+  background: rgba(26, 14, 0, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(201, 168, 76, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 50px rgba(201, 168, 76, 0.1);
+}
+
+/* Badges */
+.product-badge-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.badge-bestseller {
+  background: linear-gradient(135deg, #C9A84C, #D4AF37);
+  color: #130802;
+}
+
+.badge-purple {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #ffffff;
+}
+
+.badge-new {
+  background: linear-gradient(135deg, #8B1A1A, #c0392b);
+  color: #ffffff;
+}
+
+.badge-luxury {
+  background: linear-gradient(135deg, #164e63, #0891b2);
+  color: #E8C97A;
+}
+
+/* Image styling */
+.product-image-wrapper {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(20, 12, 0, 0.3);
+}
+
+.product-grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-grid-img {
+  transform: scale(1.06);
+}
+
+/* Overlay & enquire button */
+.product-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(19, 8, 2, 0.72);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-card-overlay {
+  opacity: 1;
+}
+
+.btn-card-enquire {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #C9A84C, #D4AF37);
+  color: #130802;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-card-enquire:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.45);
+}
+
+/* Content block styling */
+.product-card-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tag-pill {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #A89060;
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.product-card-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #F5E6C8;
+  margin-bottom: 6px;
+}
+
+.product-card-note {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.88rem;
+  color: #A89060;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* Footer layout */
+.product-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  border-top: 1px solid rgba(201, 168, 76, 0.12);
+  padding-top: 16px;
+}
+
+.product-card-stars {
+  display: flex;
+  gap: 3px;
+}
+
+.btn-card-wa {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btn-card-wa:hover {
+  color: #F5E6C8;
+}
+
+/* === RESPONSIVE LAYOUT === */
+
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  
+  .collections-section {
+    padding: 80px 0;
+  }
+  
+  .product-image-wrapper {
+    height: 220px;
+  }
+}

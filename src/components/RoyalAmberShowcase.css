@@ -1,0 +1,328 @@
+/* === ROYAL AMBER SHOWCASE SECTION === */
+
+.amber-showcase-section {
+  position: relative;
+  width: 100%;
+  min-height: 120vh;
+  background-color: #170d05; /* Deep rich amber-chocolate background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 100px 0;
+  z-index: 25;
+}
+
+/* Background amber glow */
+.amber-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.1) 0%, rgba(139, 26, 26, 0.02) 45%, transparent 70%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Floating Spices & Gold Crystals */
+.amber-particle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+  will-change: transform;
+}
+
+.crystal-1 {
+  top: 15%;
+  left: 10%;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #8B1A1A 0%, #C9A84C 100%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  filter: drop-shadow(0 0 5px rgba(201,168,76,0.3));
+}
+
+.flake-1 {
+  bottom: 20%;
+  right: 15%;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #C9A84C 0%, #E8C97A 100%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  box-shadow: 0 0 10px rgba(201, 168, 76, 0.4);
+}
+
+.crystal-2 {
+  top: 35%;
+  right: 12%;
+  width: 18px;
+  height: 26px;
+  background: linear-gradient(135deg, #a21caf 0%, #8B1A1A 100%);
+  border-radius: 50% 0 50% 0; /* Petal shape */
+  filter: blur(0.5px);
+}
+
+.dust-1 {
+  bottom: 25%;
+  left: 20%;
+  width: 6px;
+  height: 6px;
+  background: #D4AF37;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #D4AF37;
+}
+
+.amber-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr; /* Mirror layout of Purple Oud */
+  gap: 80px;
+  align-items: center;
+}
+
+/* Text Column (Left Side) */
+.amber-text-col {
+  text-align: left;
+  z-index: 10;
+}
+
+.amber-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 12px;
+}
+
+.amber-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 700;
+  color: #F5E6C8;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.amber-subtitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.3rem;
+  color: #A89060;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.amber-description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #F5E6C8;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+/* Scent profile card */
+.amber-scent-profile {
+  background: rgba(26, 14, 0, 0.45);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 36px;
+  backdrop-filter: blur(8px);
+}
+
+.profile-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+  padding-bottom: 8px;
+}
+
+.profile-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CTA button */
+.amber-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 32px;
+  background: transparent;
+  color: #C9A84C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1.5px solid rgba(201, 168, 76, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.amber-cta-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(201, 168, 76, 0.08);
+  border-color: #C9A84C;
+  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.15);
+}
+
+/* Visual Column (Right Side) */
+.amber-visual-col {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.amber-bottle-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 25px 50px rgba(201, 168, 76, 0.35));
+}
+
+.amber-bottle-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.amber-bottle-glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.22) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Widescreen Theatre Frame Card */
+.amber-widescreen-video-frame {
+  position: absolute;
+  left: -40px;
+  bottom: 20px;
+  width: 250px;
+  z-index: 15;
+  transform: rotate(-3deg);
+}
+
+.widescreen-card-glass {
+  background: rgba(26, 14, 0, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.widescreen-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16; /* 9:16 portrait aspect ratio */
+  background: #000;
+}
+
+.amber-showcase-video-16-9 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.widescreen-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 75%, rgba(23, 13, 5, 0.6));
+  pointer-events: none;
+}
+
+/* === RESPONSIVE LAYOUT === */
+
+@media (max-width: 1024px) {
+  .amber-container {
+    gap: 40px;
+  }
+  .amber-widescreen-video-frame {
+    width: 200px;
+    left: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .amber-showcase-section {
+    padding: 80px 24px;
+    height: auto;
+    min-height: auto;
+  }
+
+  .amber-particle {
+    display: none; /* Hide particles on mobile to improve render speed */
+  }
+
+  .amber-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  /* Shift text to the top for natural mobile column stack flow */
+  .amber-text-col {
+    order: 2;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .amber-visual-col {
+    order: 1;
+    height: 480px;
+  }
+
+  .amber-bottle-wrapper {
+    width: 200px;
+  }
+
+  .amber-widescreen-video-frame {
+    width: 160px;
+    left: 20px;
+    bottom: 40px;
+  }
+
+  .amber-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

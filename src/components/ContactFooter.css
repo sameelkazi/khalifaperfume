@@ -1,0 +1,357 @@
+/* === CONTACT CARDS & FOOTER SECTION === */
+
+.footer-section {
+  position: relative;
+  width: 100%;
+  background-color: #130802; /* Chocolate theme */
+  padding: 100px 0 0 0; /* No bottom padding since copyright is at the bottom */
+  z-index: 20;
+}
+
+.contact-cards-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px 80px 24px; /* Padding bottom to separate contact from bottom footer */
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 12px;
+}
+
+.contact-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  color: #F5E6C8;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.contact-desc {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.05rem;
+  color: #A89060;
+  line-height: 1.75;
+  margin-top: 16px;
+}
+
+/* Cards Grid */
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 32px 28px;
+  border-radius: 12px;
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  background: rgba(26, 14, 0, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  text-decoration: none;
+  transition: all 0.35s ease;
+}
+
+/* Primary Highlight WhatsApp Card */
+.contact-card-primary {
+  background: linear-gradient(135deg, #C9A84C, #D4AF37);
+  border: none;
+  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.25);
+}
+
+.contact-card-primary .contact-icon-box {
+  background: rgba(19, 8, 2, 0.12);
+  border-color: rgba(19, 8, 2, 0.2);
+}
+
+.contact-card-primary .contact-card-text h3 {
+  color: #130802;
+  opacity: 0.85;
+}
+
+.contact-card-primary .contact-card-text .info-main {
+  color: #130802;
+}
+
+.contact-card-primary .contact-card-text .info-sub {
+  color: #130802;
+  opacity: 0.7;
+}
+
+/* Non-highlighted card hovers */
+.contact-card:not(.contact-card-primary):hover {
+  transform: translateY(-5px);
+  border-color: rgba(201, 168, 76, 0.45);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contact-card-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(201, 168, 76, 0.4);
+}
+
+/* Card Icons */
+.contact-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Card Typography */
+.contact-card-text {
+  text-align: left;
+}
+
+.contact-card-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 6px;
+}
+
+.contact-card-text .info-main {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #F5E6C8;
+  line-height: 1.2;
+}
+
+.contact-card-text .info-sub {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.82rem;
+  color: #A89060;
+  margin-top: 4px;
+}
+
+.border-only {
+  cursor: default;
+}
+
+/* Large Final Button CTA */
+.cta-final-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-cta-large {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, #C9A84C, #D4AF37);
+  color: #130802;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-cta-large:hover {
+  box-shadow: 0 12px 40px rgba(201, 168, 76, 0.45);
+}
+
+/* === MAIN BOTTOM FOOTER === */
+.bottom-footer {
+  background-color: #0c0501; /* Extra dark chocolate brown */
+  border-top: 1px solid rgba(201, 168, 76, 0.12);
+  padding: 80px 24px 40px 24px;
+}
+
+.footer-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 0.9fr;
+  gap: 80px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.08);
+}
+
+/* Footer Brand */
+.footer-brand {
+  text-align: left;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #C9A84C;
+  line-height: 1;
+}
+
+.brand-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #A89060;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.footer-tagline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #A89060;
+  max-width: 320px;
+}
+
+/* Footer Typography & Links */
+.footer-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.footer-links-col {
+  text-align: left;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links-list a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.92rem;
+  color: #A89060;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links-list a:hover {
+  color: #F5E6C8;
+}
+
+/* Contact Column */
+.footer-contact-col {
+  text-align: left;
+}
+
+.contact-detail-item {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.92rem;
+  color: #A89060;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.contact-detail-item strong {
+  color: #C9A84C;
+  font-weight: 600;
+}
+
+/* Copyright banner */
+.footer-copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer-copyright p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
+  color: #6B5A3E;
+  letter-spacing: 0.05em;
+}
+
+/* === RESPONSIVE LAYOUT === */
+
+@media (max-width: 1024px) {
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto 30px auto;
+    gap: 16px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+  }
+  
+  .footer-contact-col {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .footer-contact-col {
+    grid-column: span 1;
+  }
+  
+  .btn-cta-large {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 20px;
+    font-size: 11px;
+  }
+  
+  .bottom-footer {
+    padding: 60px 24px 30px 24px;
+  }
+}

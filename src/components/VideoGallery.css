@@ -1,0 +1,173 @@
+/* === VIDEO BOUTIQUE GALLERY SECTION === */
+
+.video-gallery-section {
+  position: relative;
+  width: 100%;
+  background-color: #130802; /* Chocolate theme */
+  padding: 100px 0;
+  z-index: 20;
+}
+
+.video-gallery-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.video-gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.video-gallery-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 12px;
+}
+
+.video-gallery-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  color: #F5E6C8;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Video Grid layout */
+.video-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.video-gallery-card {
+  position: relative;
+  aspect-ratio: 9/16;
+  max-height: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  background: rgba(26, 14, 0, 0.4);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.35s ease;
+}
+
+.video-gallery-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 168, 76, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 40px rgba(201, 168, 76, 0.08);
+}
+
+.video-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+}
+
+/* Play Overlay */
+.video-play-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(19, 8, 2, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Play Icon Circle button */
+.play-icon-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #C9A84C, #D4AF37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.4);
+  transition: all 0.3s ease;
+}
+
+.video-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #F5E6C8;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 18px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover & Active/Playing States */
+.video-play-overlay:hover {
+  background: rgba(19, 8, 2, 0.65);
+}
+
+.video-play-overlay.is-playing {
+  background: rgba(19, 8, 2, 0);
+}
+
+.video-play-overlay.is-playing .play-icon-circle {
+  opacity: 0;
+  transform: scale(0.85);
+}
+
+.video-play-overlay.is-playing .video-card-title {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Reveal controllers on hover even when playing */
+.video-play-overlay.is-playing:hover {
+  background: rgba(19, 8, 2, 0.55);
+}
+
+.video-play-overlay.is-playing:hover .play-icon-circle {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.video-play-overlay.is-playing:hover .video-card-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === RESPONSIVE LAYOUT === */
+
+@media (max-width: 1024px) {
+  .video-cards-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+  
+  .video-gallery-section {
+    padding: 80px 0;
+  }
+}
