@@ -26,7 +26,7 @@ const products: ProductItem[] = [
     tags: ['Musky', 'Powdery', 'Long-lasting'],
     note: 'Mild & Elegant Musk',
     stars: 5,
-    image: '/unnamed.webp',
+    image: '/musk-khalifa.webp',
     waText: 'Musk Khalifa Perfume'
   },
   {
@@ -38,7 +38,7 @@ const products: ProductItem[] = [
     tags: ['Mysterious', 'Rich Oud', 'Long-lasting'],
     note: 'Royal Oriental Oud',
     stars: 5,
-    image: '/unnamed (5).webp',
+    image: '/purple-oud.webp',
     waText: 'Purple Oud Perfume'
   },
   {

@@ -14,13 +14,13 @@ const videos: VideoItem[] = [
   {
     id: 1,
     src: '/videoplayback.mp4',
-    poster: '/unnamed (5).webp',
+    poster: '/purple-oud.webp',
     title: 'Purple Oud Impression'
   },
   {
     id: 2,
     src: '/videoplayback (1).mp4',
-    poster: '/unnamed.webp',
+    poster: '/musk-khalifa.webp',
     title: 'Musk Khalifa Display'
   },
   {
