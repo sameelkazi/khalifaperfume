@@ -1,4 +1,5 @@
 import React from 'react'
+import { Preloader } from './components/Preloader'
 import { IntroExpansion } from './components/IntroExpansion'
 import { Hero } from './components/Hero'
 import { Product } from './components/Product'
@@ -13,6 +14,7 @@ import { ContactFooter } from './components/ContactFooter'
 const App: React.FC = () => {
   return (
     <main className="min-h-screen bg-[#130802] relative">
+      <Preloader />
       {/* Islamic Geometric Pattern Overlay (full-page) */}
       <div className="geo-pattern" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
