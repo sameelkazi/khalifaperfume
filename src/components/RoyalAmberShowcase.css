@@ -204,7 +204,7 @@
 .amber-bottle-wrapper {
   position: relative;
   z-index: 12;
-  width: 280px;
+  width: 360px;
   max-width: 100%;
   height: auto;
   display: flex;
@@ -232,10 +232,10 @@
 /* Widescreen Theatre Frame Card */
 .amber-widescreen-video-frame {
   position: absolute;
-  left: -20px;
+  left: -30px;
   top: 40px;
   bottom: auto;
-  width: 300px;
+  width: 280px;
   z-index: 5;
   transform: rotate(-3deg);
 }
@@ -278,7 +278,7 @@
     gap: 40px;
   }
   .amber-widescreen-video-frame {
-    width: 240px;
+    width: 220px;
     left: -10px;
     top: 60px;
     bottom: auto;
@@ -315,12 +315,12 @@
   }
 
   .amber-bottle-wrapper {
-    width: 200px;
+    width: 250px;
   }
 
   .amber-widescreen-video-frame {
     width: 200px;
-    left: 20px;
+    left: 10px;
     top: 60px;
     bottom: auto;
   }
