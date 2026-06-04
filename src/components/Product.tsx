@@ -144,7 +144,6 @@ export const Product: React.FC = () => {
             </svg>
             Order via WhatsApp
           </a>
-          <p className="product-copyright">© 2024 Khalifa Attar &amp; Perfumes · @khalifa_attar_perfumes</p>
         </motion.div>
       </div>
     </section>

@@ -98,14 +98,7 @@ export const ContactFooter: React.FC = () => {
           {/* Logo Brand Info */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 2 L22 10 L32 10 L24 16 L27 26 L18 20 L9 26 L12 16 L4 10 L14 10 Z" fill="none" stroke="#C9A84C" strokeWidth="1.5" />
-                <rect x="10" y="26" width="16" height="3" rx="1" fill="#C9A84C" opacity="0.7" />
-              </svg>
-              <div className="footer-logo-text">
-                <span className="brand-name">Khalifa</span>
-                <span className="brand-sub">ATTAR &amp; PERFUMES</span>
-              </div>
+              <img src="/logo_gold.png" alt="Khalifa Attar & Perfumes" className="footer-logo-img" />
             </div>
             <p className="footer-tagline">
               Where ancient wisdom meets modern luxury. Every scent tells a story of the Orient.

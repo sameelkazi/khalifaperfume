@@ -216,6 +216,12 @@
   margin-bottom: 20px;
 }
 
+.footer-logo-img {
+  max-height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
 .footer-logo-text {
   display: flex;
   flex-direction: column;
