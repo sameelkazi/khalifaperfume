@@ -56,7 +56,7 @@ export const Navbar: React.FC = () => {
           <div className="bg-black/20 p-1 md:p-1.5 rounded-full flex items-center justify-center">
             <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 text-black" />
           </div>
-          <span className="text-xs md:text-sm font-normal">WhatsApp Us</span>
+          <span className="text-xs md:text-sm font-normal">Order Now</span>
         </motion.button>
       </div>
     </nav>
