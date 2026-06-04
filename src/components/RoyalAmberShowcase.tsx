@@ -114,7 +114,7 @@ export const RoyalAmberShowcase: React.FC = () => {
             style={{ y: bottleY, rotate: bottleRotate }}
           >
             <img
-              src="/new_variant_full.png"
+              src="/royal_amber_product.jpg"
               alt="Royal Amber Perfume Bottle"
               className="amber-bottle-img"
             />

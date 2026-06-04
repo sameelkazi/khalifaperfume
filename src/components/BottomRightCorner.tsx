@@ -9,19 +9,19 @@ export const BottomRightCorner: React.FC = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.4 }}
       onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-      className="absolute bottom-0 right-0 p-3 pt-5 pl-8 sm:p-4 sm:pt-6 sm:pl-10 md:p-6 md:pt-8 md:pl-14 bg-[#130802] rounded-tl-[1.5rem] sm:rounded-tl-[2rem] md:rounded-tl-[3.5rem] flex items-center gap-3 sm:gap-4 md:gap-6 cursor-pointer hover:opacity-90 transition-opacity group"
+      className="absolute bottom-0 right-0 p-3 pt-5 pl-8 sm:p-4 sm:pt-6 sm:pl-10 md:p-6 md:pt-8 md:pl-14 bg-gradient-to-br from-[#231209]/95 via-[#150a04]/95 to-[#0c0502]/98 border-t border-l border-[#C9A84C]/20 rounded-tl-[1.5rem] sm:rounded-tl-[2rem] md:rounded-tl-[3.5rem] flex items-center gap-3 sm:gap-4 md:gap-6 cursor-pointer hover:opacity-95 transition-opacity group backdrop-blur-md"
     >
       {/* Top intersection mask */}
       <div className="absolute -top-[1.5rem] sm:-top-[2rem] md:-top-[3.5rem] right-0 w-[1.5rem] sm:w-[2rem] md:w-[3.5rem] h-[1.5rem] sm:h-[2rem] md:h-[3.5rem] pointer-events-none">
         <svg width="100%" height="100%" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M56 56V0C56 30.9279 30.9279 56 0 56H56Z" fill="#130802"/>
+          <path d="M56 56V0C56 30.9279 30.9279 56 0 56H56Z" fill="#0d0502"/>
         </svg>
       </div>
 
       {/* Left intersection mask */}
       <div className="absolute bottom-0 -left-[1.5rem] sm:-left-[2rem] md:-left-[3.5rem] w-[1.5rem] sm:w-[2rem] md:w-[3.5rem] h-[1.5rem] sm:h-[2rem] md:h-[3.5rem] pointer-events-none">
         <svg width="100%" height="100%" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M56 56H0C30.9279 56 56 30.9279 56 0V56Z" fill="#130802"/>
+          <path d="M56 56H0C30.9279 56 56 30.9279 56 0V56Z" fill="#0d0502"/>
         </svg>
       </div>
 

@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
 
   return (
     <div className="w-full h-[100dvh] flex items-center justify-center p-2 sm:p-3 md:p-5 bg-transparent">
-      <section className="relative w-full max-w-[1536px] h-full rounded-[1.5rem] md:rounded-[3rem] overflow-hidden shadow-none flex flex-col items-center bg-black/25 group">
+      <section className="relative z-10 w-full max-w-[1536px] h-full rounded-[1.5rem] md:rounded-[3rem] overflow-hidden shadow-none flex flex-col items-center bg-black/25 group">
         {/* The Video Background */}
         <video
           key={videoSrc}
@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
         </video>
 
         {/* The Content Layer */}
-        <div className="relative z-10 w-full h-full flex flex-col items-center">
+        <div className="relative z-20 w-full h-full flex flex-col items-center">
           <Navbar />
           
           {/* Text Container */}
