@@ -112,10 +112,10 @@ export const Preloader: React.FC = () => {
             </motion.div>
 
             {/* Liquid Morphing Text */}
-            <div className="h-20 md:h-24 w-full flex items-center justify-center overflow-hidden">
+            <div className="h-16 md:h-20 w-full flex items-center justify-center overflow-hidden">
               <MorphingText
                 texts={["KHALIFA", "LUXURY ATTARS", "PURE OUD", "ARABIAN SOUL", "ELEGANCE"]}
-                className="text-[#C9A84C] font-serif tracking-widest text-3xl md:text-5xl uppercase font-light"
+                className="text-[#C9A84C] font-serif tracking-widest text-2xl md:text-3xl lg:text-4xl uppercase font-light h-12 md:h-16 w-full"
               />
             </div>
 
