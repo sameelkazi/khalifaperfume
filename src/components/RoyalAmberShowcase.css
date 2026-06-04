@@ -204,7 +204,7 @@
 .amber-bottle-wrapper {
   position: relative;
   z-index: 12;
-  width: 360px;
+  width: 300px;
   max-width: 100%;
   height: auto;
   display: flex;
@@ -315,7 +315,7 @@
   }
 
   .amber-bottle-wrapper {
-    width: 250px;
+    width: 220px;
   }
 
   .amber-widescreen-video-frame {
